@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #101426;
+    color: #f5edda;
+    line-height: 1.7;
+}
+
+header {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(135deg, #17244a, #321d46, #101426);
+    border-bottom: 3px solid #d6ad55;
+}
+
+.subtitulo {
+    color: #e5c77d;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #f3d58b;
+    margin: 10px 0;
+}
+
+nav {
+    background-color: #191d32;
+    text-align: center;
+    padding: 18px 10px;
+    border-bottom: 1px solid #b9944d;
+}
+
+nav a {
+    color: #f3d58b;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1050px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: #1b2138;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #514568;
+    border-radius: 14px;
+}
+
+h2 {
+    color: #f3d58b;
+    border-bottom: 1px solid #6e5a3c;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #f3d58b;
+}
+
+.personagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.cartao {
+    flex: 1 1 230px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #6e5a3c;
+    background-color: #282b43;
+    transition: transform 0.2s;
+}
+
+.cartao:hover {
+    transform: translateY(-5px);
+}
+
+.simbolo {
+    font-size: 35px;
+}
+
+.casa {
+    color: #e5c77d;
+    font-weight: bold;
+}
+
+#casas article {
+    padding: 8px 15px;
+    margin: 12px 0;
+    border-left: 3px solid #d6ad55;
+    background-color: #252941;
+}
+
+aside {
+    background-color: #2c2541;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #b9944d;
+    margin-bottom: 30px;
+}
+
+aside a,
+footer a {
+    color: #f3d58b;
+}
+
+aside a:hover,
+footer a:hover {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #090c18;
+    border-top: 3px solid #d6ad55;
+    color: #d7d2c8;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 34px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section,
+    aside {
+        padding: 18px;
+    }
+}
